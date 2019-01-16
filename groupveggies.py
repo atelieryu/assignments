@@ -26,5 +26,5 @@ import json
 
 rows = [vegtables_by_color]
 
-with open('vegtables_by_color', 'w') as f:
+with open('vegtables_by_color.json', 'w') as f:
     json.dump(rows, f)
