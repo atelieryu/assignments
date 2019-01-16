@@ -23,11 +23,15 @@ with open('superheroes.csv', 'w') as g:
         age = member['age']
         secretIdentity = member['secretIdentity']
         powers = member['powers']
-        squadName = 'Super hero squad'
-        homeTown = 'Metro City'
-        formed = '2016'
-        secretBase = 'Super tower'
-        active = 'True'
+        # in case it change
+        squadName = superheroes['squadName']
+        homeTown = superheroes['homeTown']
+        formed = superheroes['formed']
+        secretBase = superheroes['secretBase']
+        active = superheroes['active']
+        #find first power
+
+        firstpower = member['powers'][0]
 
 
         output = [name, age, secretIdentity, powers, squadName, homeTown, formed, secretBase, active]
